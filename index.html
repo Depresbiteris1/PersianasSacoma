@@ -1,78 +1,256 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&family=Nunito:ital,wght@1,300&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&family=Nunito:ital,wght@1,300&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Sacoma Persianas</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href="css/style.css">
 </head>
+
 <body>
-    <nav>
-        <a href="#">Sacoma Persianas</a>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Servicos</a></li>
-            <li><a href="#contato">Contato</a></li>     
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <div class="col-md-12 col-6 logo">
+                    <div class="text-center">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid py-4" src="img/LOGO.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-md-center text-end col-md-12 col-6">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav w-100 justify-content-center my-2 my-lg-0 navbar-nav-scroll pt-30"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" aria-current="page" href="#"><strong>Home</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" aria-current="page" href="#sobre"><strong>Sobre</strong></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link mx-4" aria-current="page"
+                                    href="#servicos"><strong>Serviços</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-4" aria-current="page"
+                                    href="#contato"><strong>Contato</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <header id="topo">
-        <h1>Persianas Sacoma</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>   
-    </header>
+    <section id="banner">
+        <h1><strong>Elegância e conforto para você. </strong></h1>
+        <p><b>Mais de 10 anos de experiência, atendendo com transparência e responsabilidade</b></p>
+    </section>
 
     <section id="sobre">
         <h2>Sobre Nós</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        <a href="#servicos">Ver mais</a>
+        <p>A Persianas Sacomã está há mais de 10 anos no mercado de proteção solar, trazendo elegância e conforto para a
+            casa de seus clientes.
+            Com transparência e responsabilidade, realizamos a comercialização, assistência técnica e higienização de
+            persianas e cortinas em São Paulo e demais regiões.</p>
+        <a class="btn btn-primary" style="background-color: #1f3d81; border-radius: 1em" href="#servicos">Ver mais</a>
+    </section>
+
+    <section id="banner2">
+        <h1><b>Para seu ambiente de trabalho.</b></h1>
+        <p><b>Diversos modelos para compor seu estabelecimento comercial.</b></p>
     </section>
 
     <section id="servicos">
-        <h2>Serviços</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h2><strong>CONHEÇA NOSSOS MODELOS</strong></h2>
+                </div>
+            </div>
 
-        <div>
-            <img src="img/Persiana.png" alt="higienizacao">
-            <h3>Higienização</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-servicos bg-white h-100 p-3 text-center">
+                        <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                            data-bs-target="#limpezaModal">
+                            <img src="img/limpeza.png" class="img-fluid" alt="limpeza">
+                            <h3 class="mt-4">Limpeza e manutenção</h3>
+                        </button>
+                    </div>
+                </div>
 
-        <div>
-            <img src="img/instalacao.png" alt="instalacao/manutencao">
-            <h3>Instalação/Manuteção</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        </div>
+                <div class="col-md-3  mt-4 mt-md-0">
+                    <div class="card-servicos bg-white h-100 p-3 text-center">
+                        <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                            data-bs-target="#negocioModal">
+                            <img src="img/persiana1.png" class="img-fluid" alt="negócio">
+                            <h3 class="mt-4">Para seu negócio</h3>
+                        </button>
+                    </div>
+                </div>
 
-        <div>
-            <img src="img/catalogo.png" alt="Catalogo">
-            <h3>Catalogo</h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <div class="col-md-3  mt-4 mt-md-0">
+                    <div class="card-servicos bg-white h-100 p-3 text-center">
+                        <button type="button" class="btn btn-outline" data-bs-toggle="modal"
+                            data-bs-target="#casaModal">
+                            <img src="img/persiana2.png" class="img-fluid" alt="casa">
+                            <h3 class="mt-4">Para sua <br />casa </h3>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-3  mt-4 mt-md-0">
+                    <div class="card-servicos bg-white h-100 p-3 text-center">
+                        <a href="catalogo.pdf" download="catalogo.pdf" type="application/pdf"
+                            style="text-decoration:none">
+                            <img src="img/mais.png" class="img-fluid" alt="catalogo">
+                            <h3 class="mt-4">Conheça nosso catálogo</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Vem falar com a gente</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h2><strong>Contatos</strong></h2>
+                </div>
+            </div>
 
-        <div>
-            <img src="img/tel.png" alt="telefone">
-            <p><a href="tel:11989223516"></a>(11)98922-3516</p>
+            <form action="https://formsubmit.co/kaue.sobral19@gmail.com" method="POST">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <button type="submit">Send</button>
+           </form>
+
+            <!-- <form action="mailto:kaue.sobral19@gmail.com" method="POST" enctype="text/plain">
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" name="Email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                        <input name="Nome" class="form-control" id="exampleFormControlInput1">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="exampleFormControlTextarea1" class="form-label">Telefone</label>
+                        <input name="Telefone" class="form-control" id="exampleFormControlTextarea1"
+                            placeholder="(11) 00000-0000"></input>
+                    </div>
+
+                </div>
+
+                <div class="my-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <button class="my-3 btn btn-primary" style="border-radius:3em;"  value="Enviar" type="submit">Submit</button>
+                    <input type="reset" value="Limpar"></input>
+                </div>
+            </form> -->
+
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img class="img-fluid" style=" padding-left:20px;" src="img/mail.png" />
+                    <p><a href="mailto:francisco@sacomapersianas.com.br"></a>francisco@sacomapersianas.com.br</p>
+                </div>
+
+                <div class="col-md-6">
+                    <img class=" img-fluid" src="img/tel.png" />
+                    <p><a href="tel:11989223516"></a>(11) 98922-3516</p>
+                </div>
+
+            </div>
         </div>
 
-        <div>
-            <img src="img/mail.png" alt="email">
-            <p><a href="mailto:rocha@gmail.com"></a>Contat@gmail.com</p>
-        </div>
+
+        <a href="https://wa.me/5511989223516?text=Eu%20quero%20persiana" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        z-index:1000;" target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
     </section>
 
     <footer>
-        <a href="#topo">Voltar</a>
-        <p>Informações da empresa</p>
+        <p style="font-size: 12px;">&copy; Sacomã persianas</p>
+        <p>CNPJ 08.801.882/0001-04</p>
     </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="limpezaModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/lavagem.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="negocioModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/lavagem.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="casaModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/lavagem.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
