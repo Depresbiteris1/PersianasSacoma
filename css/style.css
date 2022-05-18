@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  sans-serif ;
+    font-family: sans-serif;
 }
 
 body {
@@ -13,9 +13,15 @@ body {
     background-color: #f3f3f3;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Asap, sans-serif;
     color: #1c1c1c;
+}
+
+#mail {
+    padding-left: 40px;
 }
 
 /* Navegação */
@@ -23,76 +29,31 @@ h1, h2, h3 {
 nav {
     box-shadow: 0px 2px 10px 0px rgba(41, 40, 40, 0.75);
 }
-/* nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    box-shadow: 0px 0px 8px 2px #000000;
+
+#navbarScroll ul {
+    justify-content: center;
 }
 
-nav > a {
-    text-decoration: none;
-    padding: 50px 0 0 0;
-    font-weight: 800;
-    font-size: 32px;
-    font-family: Yellowtail, sans-serif;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
-
-nav ul li {
-    text-align: center;
-    width: 100%;
-}
-
-nav ul li a{
-    display: inline-block;
-    padding: 10px 0;
-    width: 100%;
-    text-decoration: none;
-    color: #00225e;     
-     font-family: sans-serif;  
-} */
-/* 
-nav ul li a:hover{
-    color: #ff0000;
-} */
-
-/* Cabeçalho */
+/* banner */
 
 section#banner {
-    display: flex;
-    flex-direction: column;
     align-items: left;
     background-image: url("../img/modelobanner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #ffffff;
-    text-align: left;
     height: 700px;
-    padding: 20px;
-
 }
 
-section#banner h1{
+section#banner h1 {
     color: #ffffff;
     padding-top: 190px;
     padding-left: 40px;
 }
 
-section#banner p, section#banner2 p{
+section#banner p,
+section#banner2 p {
     padding-left: 40px;
     margin-bottom: 1em;
     align-items: left;
@@ -101,42 +62,29 @@ section#banner p, section#banner2 p{
 }
 
 section#banner2 {
-    display: flex;
-    flex-direction: column;
     align-items: left;
     background-image: url("../img/modelobanner2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #080808;
-    text-align: left;
     height: 500px;
     padding: 20px;
 
 }
 
-section#banner2 h1{
+section#banner2 h1 {
     color: #000000;
     padding-top: 73px;
     padding-left: 40px;
 }
 
-#sobre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px 10px 20px 20px;
+#sobre {
     color: #000000;
 }
 
 #sobre h2 {
     color: #1f3d81;
-}
-
-#sobre p {
-    margin-bottom: 2.5em;
-    max-width: 1000px;
 }
 
 #sobre .botao {
@@ -147,22 +95,27 @@ section#banner2 h1{
 
 /* Serviços */
 
-section .card-servicos{
+section .card-servicos {
     border-radius: 30px;
-    box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.3);
 }
 
-section .card-servicos{
+section .card-servicos {
 
     border-color: #1f3d81;
 }
 
-.card-servicos .btn:focus{
+.card-servicos .btn:focus {
     box-shadow: none;
 }
 
-
-#contato{
+/* contato */
+#contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,8 +123,12 @@ section .card-servicos{
     padding: 20px;
 }
 
-#contato h2{
+#contato h2 {
     color: #000000;
+}
+
+#tel {
+    padding-top: 0px;
 }
 
 footer {
@@ -181,63 +138,209 @@ footer {
     color: #ffffff;
 }
 
-footer p{
+footer p {
     font-size: 12px;
     color: #ffffff;
 }
 
-@media screen and (min-width: 768px){
-    /*nav*/
-    nav {
-        justify-content: space-around;
-    }
-    nav ul {
-        flex-direction: row;
-        width: 70%;
+/*cabeçalho*/
+header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+}
+
+#sobre {
+    justify-content: center;
+    min-height: 250px;
+}
+
+#servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#servicos h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#servicos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Nav */
+    .mx-4 {
+        margin-right: 1rem !important;
+        margin-left: 0 !important;
     }
 
-    /*cabeçalho*/
-    header{
-        height: 600px;
-        height: 60vh;
-        justify-content: center;
+    #navbarScroll ul {
+        font-size: 12px;
+        margin-left: 117px;
     }
 
-    #sobre{
-        height: 150px;
-        height: 30vh;
-        justify-content: center;
-        min-height: 250px;
+    .text-center {
+        padding-top: 10px;
+        padding-left: 16px;
     }
 
-    #servicos{
+    /* banner */
+
+    section#banner {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-image: url("../img/bannerCelular1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #ffffff;
+        text-align: left;
+        height: 300px;
+        padding: 20px;
+
+    }
+
+    section#banner h1 {
+        color: #ffffff;
+        padding-top: 50px;
+        padding-left: 1px;
+        font-size: 18px;
+    }
+
+    section#banner p {
+        padding-left: 1px;
+        margin-bottom: 1em;
+        align-items: left;
+        font-size: 15px;
+        max-width: 200px;
+    }
+
+    /* sobre */
+
+    #sobre {
+      
+        font-size: 12px;
+        color: #000000;
+    }
+
+    #sobre h2 {
+        color: #1f3d81;
+    }
+
+    #sobre p {
+        margin-bottom: 0.5em;
+        max-width: 600px;
+        font-size: 15px;
+    }
+
+    #sobre a {
+        background-color: #1f3d81;
+        color: #ffffff;
+        border-radius: 2em;
+    }
+
+
+    /* banner */
+    section#banner2 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-image: url("../img/modelobanner2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #080808;
+        text-align: left;
+        height: 360px;
+        padding-top: 10px;
+    }
+
+    section#banner2 h1 {
+        color: #ffffff;
+        padding-top: 154px;
+        font-size: 18px;
+        padding-left: 40px;
+        text-align: end;
+    }
+
+    section#banner2 p {
+        padding-left: 120px;
+        margin-bottom: 1em;
+        align-items: right;
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+
+
+
+    /* Serviços */
+
+    #servicos {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-        max-width: 1000px;
+        max-width: 406px;
         margin: 0 auto;
+    }
+
+    section .card-servicos {
+        border-radius: 30px;
+        box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    section .card-servicos {
+
+        border-color: #1f3d81;
+    }
+
+    .card-servicos .btn:focus {
+        box-shadow: none;
     }
 
     #servicos h2 {
         text-align: center;
-        width: 100%;
+        font-size: 20px;
     }
 
     #servicos div {
         flex-grow: 1;
-        flex-basis: 150px;
+        flex-basis: 195px;
         padding: 0 10px;
     }
 
-    #contato {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        max-width: 500px;
-        margin: 0 auto;
+
+
+    /* card */
+
+    section .card-servicos {
+        border-radius: 30px;
+        box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.3);
     }
 
-    #contato h2, #contato p{
-        width: 100%;
+    section .card-servicos {
+
+        border-color: #1f3d81;
     }
+
+    .card-servicos .btn:focus {
+        box-shadow: none;
+    }
+
+    /* contato */
+
+
+    #mail {
+        padding-left: 0px;
+    }
+
 }

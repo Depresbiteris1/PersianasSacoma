@@ -1,4 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* font-family: Nunito, sans-serif; */
+    color: #1c1c1c;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Asap, sans-serif;
+    color: #1c1c1c;
+}
+
+#mail {
+    padding-left: 40px;
+}
+
+/* Navegação */
+
+nav {
+    box-shadow: 0px 2px 10px 0px rgba(41, 40, 40, 0.75);
+}
+
+#navbarScroll ul {
+    justify-content: center;
+}
+
+/* Cabeçalho */
+
+section#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-image: url("../img/modelobanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: left;
+    height: 700px;
+    padding: 20px;
+
+}
+
+section#banner h1 {
+    color: #ffffff;
+    padding-top: 190px;
+    padding-left: 40px;
+}
+
+section#banner p,
+section#banner2 p {
+    padding-left: 40px;
+    margin-bottom: 1em;
+    align-items: left;
+    font-size: 25px;
+    max-width: 500px;
+}
+
+section#banner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-image: url("../img/modelobanner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #080808;
+    text-align: left;
+    height: 500px;
+    padding: 20px;
+
+}
+
+section#banner2 h1 {
+    color: #000000;
+    padding-top: 73px;
+    padding-left: 40px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    color: #000000;
+}
+
+#sobre h2 {
+    color: #1f3d81;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 700px;
+}
+
+#sobre .botao {
+    background-color: #1f3d81;
+    color: #ffffff;
+    border-radius: 2em;
+}
+
+/* Serviços */
+
+section .card-servicos {
+    border-radius: 30px;
+    box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.3);
+}
+
+section .card-servicos {
+
+    border-color: #1f3d81;
+}
+
+.card-servicos .btn:focus {
+    box-shadow: none;
+}
+
+/* contato */
+#contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contato h2 {
+    color: #000000;
+}
+
+#tel {
+    padding-top: 19px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/*cabeçalho*/
+header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+}
+
+#sobre {
+    height: 150px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+}
+
+#servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#servicos h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#servicos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .mx-4 {
+        margin-right: 1.5rem !important;
+        margin-left: 0 !important;
+    }
+
+    #navbarScroll ul {
+        font-size: 12px;
+        margin-left: 117px;
+    }
+
+    /* banner */
+
+    section#banner {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-image: url("../img/bannerCelular1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #ffffff;
+        text-align: left;
+        height: 200px;
+        padding: 20px;
+
+    }
+
+    section#banner h1 {
+        color: #ffffff;
+        padding-top: 35px;
+        padding-left: 1px;
+        font-size: 12px;
+    }
+
+    section#banner p {
+        padding-left: 1px;
+        margin-bottom: 1em;
+        align-items: left;
+        font-size: 12px;
+        max-width: 200px;
+    }
+
+    /* sobre */
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        padding: 10px 10px 30px 20px;
+        color: #000000;
+    }
+
+    #sobre h2 {
+        color: #1f3d81;
+    }
+
+    #sobre p {
+        margin-bottom: 0.5em;
+        max-width: 600px;
+        font-size: 15px;
+    }
+
+    #sobre a {
+        background-color: #1f3d81;
+        color: #ffffff;
+        border-radius: 2em;
+    }
+
+
+    /* banner */
+    section#banner2 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-image: url("../img/modelobanner2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #080808;
+        text-align: left;
+        height: 200px;
+        padding-top: 10px;
+    }
+
+    section#banner2 p {
+        padding-left: 195px;
+        margin-bottom: 1em;
+        align-items: right;
+        font-size: 12px;
+        color: #000000;
+    }
+
+    section#banner2 h1 {
+        color: #000000;
+        padding-top: 60px;
+        font-size: 12px;
+        padding-left: 40px;
+        text-align: end;
+    }
+
+
+    /* Serviços */
+
+    section .card-servicos {
+        border-radius: 30px;
+        box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    section .card-servicos {
+
+        border-color: #1f3d81;
+    }
+
+    .card-servicos .btn:focus {
+        box-shadow: none;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 195px;
+        padding: 0 10px;
+    }
 
 
 
-</body>
+    /* card */
+
+    #mail {
+        padding-left: 0px;
+    }
+
+    section .card-servicos {
+        border-radius: 30px;
+        box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    section .card-servicos {
+
+        border-color: #1f3d81;
+    }
+
+    .card-servicos .btn:focus {
+        box-shadow: none;
+    }
+}
